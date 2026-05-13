@@ -1,0 +1,103 @@
+/* ================================================================
+   THEMES — variables CSS para tema oscuro y claro
+   Acento índigo/morado con detalles ámbar para alertas.
+   ================================================================ */
+
+:root,
+[data-theme="dark"] {
+  /* Fondo y paneles */
+  --bg-0: #0b0d1a;
+  --bg-1: #0f1224;
+  --bg-2: #151933;
+  --panel: rgba(22, 26, 49, 0.72);
+  --panel-solid: #161a31;
+  --panel-border: rgba(255, 255, 255, 0.07);
+  --panel-hover: rgba(255, 255, 255, 0.04);
+
+  /* Texto */
+  --text-0: #f5f6ff;
+  --text-1: #d4d6ec;
+  --text-2: #9499b9;
+  --text-3: #6b6f8c;
+
+  /* Acentos */
+  --accent: #6366f1;
+  --accent-2: #8b5cf6;
+  --accent-soft: rgba(99, 102, 241, 0.18);
+  --accent-glow: rgba(99, 102, 241, 0.45);
+  --amber: #f59e0b;
+  --amber-soft: rgba(245, 158, 11, 0.18);
+
+  /* Prioridades */
+  --prio-urgent: #ef4444;
+  --prio-high:   #f97316;
+  --prio-med:    #eab308;
+  --prio-low:    #64748b;
+
+  /* Estado */
+  --success: #10b981;
+  --danger:  #ef4444;
+  --warning: #f59e0b;
+  --info:    #38bdf8;
+
+  /* Estructura */
+  --radius-sm: 8px;
+  --radius:    14px;
+  --radius-lg: 20px;
+  --shadow-1:  0 6px 20px rgba(0, 0, 0, 0.35);
+  --shadow-2:  0 20px 60px rgba(0, 0, 0, 0.5);
+  --blur:      saturate(140%) blur(14px);
+
+  /* Tipografía */
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Fondo decorativo */
+  --bg-gradient:
+    radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,0.25), transparent 60%),
+    radial-gradient(1000px 500px at 90% 0%, rgba(139,92,246,0.22), transparent 60%),
+    linear-gradient(180deg, #0b0d1a 0%, #0a0c18 100%);
+
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg-0: #f4f5fb;
+  --bg-1: #ffffff;
+  --bg-2: #eef0fa;
+  --panel: rgba(255, 255, 255, 0.78);
+  --panel-solid: #ffffff;
+  --panel-border: rgba(15, 18, 36, 0.08);
+  --panel-hover: rgba(15, 18, 36, 0.04);
+
+  --text-0: #0f1224;
+  --text-1: #1f2240;
+  --text-2: #4a4f74;
+  --text-3: #7a7f9c;
+
+  --accent: #6366f1;
+  --accent-2: #8b5cf6;
+  --accent-soft: rgba(99, 102, 241, 0.12);
+  --accent-glow: rgba(99, 102, 241, 0.30);
+  --amber: #d97706;
+  --amber-soft: rgba(217, 119, 6, 0.12);
+
+  --prio-urgent: #dc2626;
+  --prio-high:   #ea580c;
+  --prio-med:    #ca8a04;
+  --prio-low:    #475569;
+
+  --success: #059669;
+  --danger:  #dc2626;
+  --warning: #d97706;
+  --info:    #0284c7;
+
+  --shadow-1:  0 4px 14px rgba(15, 18, 36, 0.08);
+  --shadow-2:  0 20px 50px rgba(15, 18, 36, 0.15);
+
+  --bg-gradient:
+    radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,0.18), transparent 60%),
+    radial-gradient(1000px 500px at 90% 0%, rgba(139,92,246,0.14), transparent 60%),
+    linear-gradient(180deg, #f4f5fb 0%, #eef0fa 100%);
+
+  color-scheme: light;
+}

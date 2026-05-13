@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+bower_components/
+jspm_packages/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code (configuración local)
+.claude/settings.local.json
+
+# Coverage / tests
+coverage/
+.nyc_output/
+
+# Lockfiles (descomenta si NO quieres versionarlos)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

@@ -983,12 +983,10 @@ const UI = (() => {
     if (!el) return;
     const hour = new Date().getHours();
     let greet;
-    if (hour < 6)      greet = '🌙 Buenas madrugadas';
-    else if (hour < 12) greet = '☀️ Buenos días';
-    else if (hour < 19) greet = '🌤️ Buenas tardes';
-    else                greet = '🌙 Buenas noches';
-    const quote = QUOTES[new Date().getDate() % QUOTES.length];
-    el.innerHTML = `${greet} · <span style="opacity:.7">${quote}</span>`;
+    if (hour < 12)      greet = 'Buenos días 👋';
+    else if (hour < 19) greet = 'Buenas tardes 👋';
+    else                greet = 'Buenas noches 👋';
+    el.textContent = greet;
   }
 
   // ---------- Helpers ----------
